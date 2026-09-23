@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 4 - DOM</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <h1 id="titulo"> Atividade 4 - DOM</h1>
+    <a href="../../index.html">Voltar</a>
+    <h1 id="spanTexto" >Atividade 4 - DOM</h1>
 
-    <h2> Parte 1: texto do título carregar azul</h2>
+    <hr>
+     <h3>Parte 1: texto do título carregar azul</h3>
 
-    <h2> Parte 2: botao para mudar texto</h2>
-    <button onclick="mudartexto()">mudar texto do titulo</button>
+     <hr>
 
-    <h2>Parte 3: Verificar se o numero é igual ou maior que zero ao digitar</h2>
-    <input type="number" id="numero" placeholder="digitee um numero" oninput="verificarNumero()">
+     <h3>Parte 2: Botão para mudar texto</h3>
+     <hr>
+    <button id="btAlterarTexto">Alterar texto</button>
 
-    <p id="resultado"></p>
-    <script src="script.js"></script>
+    <hr>
 
+    <h3>Parte 3: Verificar se o número é igual maior ou menor que zero ao digitar</h3>
+    <input type="number" id="inputNumero1" min="-9999999" max="999999" placeholder="Digite um Número">
+    <span id="resultado"> </span>
+
+
+
+    <script src="script.js" defer></script>
 </body>
 </html>

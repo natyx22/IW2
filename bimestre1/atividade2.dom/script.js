@@ -30,4 +30,27 @@ botaoModo.addEventListener('click', () => {
     }
 
 
-})
+});
+
+const textoEstilos = document.querySelectorAll('.spanTextoEstilo');
+const botaoMudarBold = document.getElementById('btnMudarBold');
+const botaoMudaritalico = document.getElementById('btnMudarItalico');
+
+botaoMudarBold.addEventListener('dblclick', () => {
+    textoEstilos.forEach(texto => {
+        texto.style.fontWeight = 'bold';
+    });
+});
+
+botaoMudaritalico.addEventListener('dblclick', () => {
+    textoEstilos.forEach(texto => {
+        texto.style.fontStyle = 'italic';
+    });
+});
+
+const numero = document.getElementById('inputNumero');
+const resultado = document.getElementById('spanResultado');
+
+numero.addEventListener('input', () => {
+    resultado.textContent = numero.value * 2;
+});
